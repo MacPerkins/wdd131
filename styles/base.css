@@ -73,7 +73,7 @@ section h2 {
 
 section p {
     font-family: "Big Shoulders Display", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     padding: 1rem;
     font-size: 1.75rem;
 }
@@ -81,6 +81,7 @@ section p {
 section li a {
     font-family: "Big Shoulders Display", sans-serif;
     font-size: 1.75rem;
+    font-weight: 700;
     text-decoration: none;
     color: black;
 }
@@ -131,7 +132,9 @@ footer {
     text-align: center;
     background-color: #508991;
     font-size: 2rem;
+    font-weight: 700;
     border: 2px solid black;
+    font-family: "Big Shoulders Display", sans-serif;
 }
 
 footer p {
