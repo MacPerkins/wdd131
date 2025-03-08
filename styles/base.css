@@ -100,10 +100,12 @@ section li {
 
 .my-info {
     display: flex;
+    align-items: center;
 }
 
 .my-info img {
     max-width: 100%;
+    width: 300px;
     height: 300px;
     margin: 1rem;
     border-radius: 5px;
