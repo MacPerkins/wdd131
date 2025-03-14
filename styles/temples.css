@@ -91,7 +91,15 @@ nav ul li a {
     color: black;
     font-weight: bold;
     font-family: 'Big Shoulders Display', cursive;
+}
 
+nav ul li:hover {
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    background-color: #75c5fa9f;
+    border-radius: 5px 5px;
 }
 
 header, nav ul {
@@ -124,7 +132,7 @@ main div.cards {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-main div.cards section{
+main div.cards figure {
     border: 2px solid black;
     margin: 15px;
     padding: 20px;
@@ -135,7 +143,11 @@ main div.cards section{
     box-shadow: 0 8px 2px -2px grey;
 }
 
-main div.cards section img {
+figure figcaption {
+    padding: 1rem;
+}
+
+main div.cards figure img {
     width: 100%;
     height: auto;
     border: 3px solid black;
