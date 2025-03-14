@@ -18,3 +18,4 @@ const options = {
 const formattedDate = lastModifiedDate.toLocaleDateString(undefined, options);
 
 lastModified.textContent = `Last Modified on: ${formattedDate}`;
+

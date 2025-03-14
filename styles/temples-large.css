@@ -1,0 +1,39 @@
+@media only screen and (min-width: 650px) {
+    .hamburger {
+    display: none;
+    }
+
+    .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+    }
+
+    .nav-links li {
+    border-bottom: none;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 2rem;
+        font-size: 1.75rem;
+    }
+
+    nav ul li:hover {
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    nav ul li:hover {
+        background-color: #75c5fa9f;
+        border-radius: 5px 5px;
+    }
+
+}
