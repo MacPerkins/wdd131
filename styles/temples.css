@@ -93,11 +93,11 @@ nav ul li a {
     font-family: 'Big Shoulders Display', cursive;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     transition: background-color 0.3s ease-in-out;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     background-color: #75c5fa9f;
     border-radius: 5px 5px;
 }
