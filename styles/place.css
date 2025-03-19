@@ -5,7 +5,7 @@ body {
     margin: 0;
     font-family: "Big Shoulders Display", sans-serif;
     font-size: 1rem;
-    color: #333;
+    color: black;
 }
 
 header {
@@ -24,6 +24,7 @@ header {
 
 section {
     margin: 1rem;
+    padding: 1rem;
 }
 
 section h2 {
@@ -61,4 +62,42 @@ footer {
     padding: 2rem;
     text-align: center;
     background-color: #ec9b3e6e;
+}
+
+@media only screen and (min-width: 650px) {
+
+    main {
+        position: relative;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .data {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background-color: rgba(255, 255, 255, 0.836);
+    }
+
+    section {
+        padding: 0;
+    }
+
+    div.data-table, div.weather-table {
+        margin: 1rem;
+    }
+
+    .data h2, .weather h2 {
+        text-align: left;
+        margin: 0;
+        background-color: #ec9b3e6e;
+        padding: .5rem;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background-color: rgba(255, 255, 255, 0.836);
+    }
 }
