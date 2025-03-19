@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Matthew Perkins"/>
+    <meta
+        name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Matthew Perkins. A webpage to showcase dynamic web fundamentals."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utah - Matthew Perkins</title>
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer ></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Utah</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Temple name and location" width="500" height="250">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-table">
+                <p class="label"><strong>Area:</strong></p><p>84,899 sq mi (219,887 km²)</p>
+                <p class="label"><strong>Population:</strong></p><p>3,205,958</p>
+                <p class="label"><strong>Capital:</strong></p><p>Salt Lake City</p>
+                <p class="label"><strong>Languages:</strong></p><p>English</p>
+                <p class="label"><strong>Currency:</strong></p><p>United States Dollar (USD)</p>
+                <p class="label"><strong>Time Zone:</strong></p><p>UTC-7</p>
+                <p class="label"><strong>Calling Code:</strong></p><p>+1</p>
+                <p class="label"><strong>Internet TLD:</strong></p><p>.ut</p>
+    
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-table">
+                <p class="label"><strong>Temperature:</strong></p><p>75°F</p>
+                <p class="label"><strong>Conditions:</strong></p><p>Sunny</p>
+                <p class="label"><strong>Wind:</strong></p><p>5 mph</p>
+                <p class="label"><strong>Wind Chill:</strong></p><p>75°F</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Matthew Perkins - Utah, United States</p>
+        <p id="lastModified">Last Modified on: placeholder</p>
+    </footer>
+</body>
+</html>

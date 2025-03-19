@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ec9b3e6e;
+}
+
+.hero picture img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+section {
+    margin: 1rem;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+section p {
+    margin: 0;
+}
+
+div.data-table, div.weather-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+div.data p, div.weather p {
+    text-align: left;
+}
+
+.label {
+    text-align: right;
+}
+
+div.data p strong, div.weather p strong {
+    display: inline-block;
+    width: 150px; /* Adjust the width as needed */
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ec9b3e6e;
+}
