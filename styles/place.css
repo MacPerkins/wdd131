@@ -1,18 +1,30 @@
+:root {
+    --background-color: white;
+    --font-family: "Big Shoulders Display", sans-serif;
+    --font-size: 1rem;
+    --text-color: black;
+    --header-background-color: #ec9b3e6e;
+    --label-width: 150px;
+    --label-padding-right: 0.5rem;
+    --footer-padding: 2rem;
+    --footer-background-color: #ec9b3e6e;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--background-color);
     margin: 0;
-    font-family: "Big Shoulders Display", sans-serif;
-    font-size: 1rem;
-    color: black;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ec9b3e6e;
+    background-color: var(--header-background-color);
 }
 
 .hero picture img {
@@ -20,6 +32,20 @@ header {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.weather h2::after {
+    content: url("../images/weather-icon.svg");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.weather h2 {
+    display: flex;
+    align-items: center;
 }
 
 section {
@@ -53,15 +79,15 @@ div.data p, div.weather p {
 
 div.data p strong, div.weather p strong {
     display: inline-block;
-    width: 150px; /* Adjust the width as needed */
+    width: var(--label-width); /* Adjust the width as needed */
     text-align: right;
-    padding-right: 0.5rem;
+    padding-right: var(--label-padding-right);
 }
 
 footer {
-    padding: 2rem;
+    padding: var(--footer-padding);
     text-align: center;
-    background-color: #ec9b3e6e;
+    background-color: var(--footer-background-color);
 }
 
 @media only screen and (min-width: 650px) {
@@ -90,7 +116,7 @@ footer {
     .data h2, .weather h2 {
         text-align: left;
         margin: 0;
-        background-color: #ec9b3e6e;
+        background-color: var(--header-background-color);
         padding: .5rem;
     }
 
