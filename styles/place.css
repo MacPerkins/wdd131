@@ -45,6 +45,7 @@ header {
 
 .weather h2 {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -125,5 +126,9 @@ footer {
         bottom: 15px;
         right: 15px;
         background-color: rgba(255, 255, 255, 0.836);
+    }
+    
+    .weather h2 {
+        flex-direction: row;
     }
 }
