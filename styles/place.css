@@ -131,6 +131,10 @@ footer {
         flex-direction: row;
     }
 
+    .weather img {
+        display: none;
+    }
+
     .weather h2::after {
         content: "⛅";
         display: block;
