@@ -34,8 +34,7 @@ header {
     object-fit: cover;
 }
 
-.weather h2::after {
-    content: url("../images/weather-icon.svg");
+.weather img {
     display: block;
     margin-left: auto;
     margin-right: auto;
