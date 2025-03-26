@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Perkins">
+    <meta
+        name="description"
+        content="Temple Album. A webpage to show pictures of temples."
+    >
+    <title>Temples Album with Filter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filteredtemples.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filteredtemples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="filteredtemples.html" id="home">Home</a></li>
+                <li><a href="#old" id="old">Old</a></li>
+                <li><a href="#new" id="new">New</a></li>
+                <li><a href="#large" id="large">Large</a></li>
+                <li><a href="#small" id="small">Small</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation"></button>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="cards">
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Matthew Perkins - Utah, United States</p>
+        <p id="lastModified">Last Modified on: placeholder</p>
+    </footer>
+</body>
+</html>
