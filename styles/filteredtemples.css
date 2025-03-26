@@ -154,12 +154,13 @@ main div.cards figure img {
     box-shadow: 0 8px 2px -2px grey;
 }
 
-main h2 {
+main h2, h3 {
     font-size: 2rem;
 }
 
 main p {
     font-size: 1.25rem;
+    font-weight: 400;
 }
 
 footer {
