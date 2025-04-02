@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Matthew Perkins">
+    <meta
+        name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Matthew Perkins. A webpage to showcase dynamic web fundamentals."
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page - Matthew Perkins</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer ></script>
+    <script src="scripts/form.js" defer ></script>
+    </head>
+    <body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label class="product-name">Product Name
+                    <select name="subject" required>
+                        <option value="" disabled selected>Choose a Product ...</option>
+                    </select>
+                </label>
+
+                <label class="rating-label">Overall Rating</label>
+                <div class="rating">
+                    <label><input type="radio" id="rating" name="rating" value="1" required>★</label>
+                    <label><input type="radio" name="rating" value="2" required>★★</label>
+                    <label><input type="radio" name="rating" value="3" required>★★★</label>
+                    <label><input type="radio" name="rating" value="4" required>★★★★</label>
+                    <label><input type="radio" name="rating" value="5" required>★★★★★</label>
+                </div>
+
+                <label class="date">Date of Installation
+                    <input type="date" id="date" name="installationDate" required>
+                </label>
+
+                <label class="features">Which Features did you find useful in the Product? Check all that apply:</label>
+                <div class="checkbox-group">
+                    <label class="checkbox"><input type="checkbox" id="features" name="features" value="durability"> Durability</label>
+                    <label class="checkbox"><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label>
+                    <label class="checkbox"><input type="checkbox" name="features" value="performance">Performance</label>
+                    <label class="checkbox"><input type="checkbox" name="features" value="design">Design</label>
+                </div>
+
+                <label class="written-review">Written Review <span>(Optional)</span><textarea id="written-review" name="written-review" placeholder="This product was ..."></textarea></label>
+
+                <label class="name">Your Name <span>(Optional)</span>
+                    <input type="text" id="name" name="fullName" placeholder="First and Last Name">
+                </label>
+
+                <input type="submit" value="Post Review" class="submitBtn">
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+        &copy;<span id="currentYear"></span> - Matthew Perkins - Utah, United
+        States
+        </p>
+        <p id="lastModified">Last Modified on: placeholder</p>
+    </footer>
+    </body>
+</html>

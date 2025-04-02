@@ -1,0 +1,110 @@
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0738a3;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+form {
+    background-color: #0f8cf3ad;
+}
+
+label {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select {
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    margin: .25rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+span {
+    color: rgba(128, 0, 128, 0.692);
+}
+
+p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 1rem 0;
+}
+
+#review-count, .review {
+    font-size: 1.2rem;
+    color: black;
+    margin: 1rem 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0738a3;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer span {
+    font-size: 1.2rem;
+    color: white;
+}
