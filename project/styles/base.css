@@ -1,0 +1,287 @@
+/* ----------Body CSS---------- */
+body {
+    background-color: #ece7e0b2;
+    font-family: "Lora", sans-serif;
+    font-weight: 300;
+    margin: auto;
+}
+
+main {
+    font-family: "Lora", sans-serif;
+}
+
+/* ----------Header & Nav CSS---------- */
+header, nav {
+    padding: 5px;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+header {
+    background-color: #468fafc9;
+    margin: 0;
+}
+
+header a {
+    display: flex;
+    text-decoration: none;
+    color: #f6f8f4;
+    align-items: center;
+    padding: .5rem;
+}
+
+header a img {
+    width: 100px;
+    height: 100px;
+}
+
+header p {
+    white-space: pre-line;
+    font-size: 1.25rem;
+    font-family: "Playfair Display", sans-serif;
+}
+
+nav {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    background-color: none;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #f6f8f4;
+    background-color: #366d85;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #f6f8f4;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li {
+    border-bottom: 1px solid #366d85;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    color: #f6f8f4;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+/* ----------Footer CSS---------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #468fafc9;
+    color: #f6f8f4;
+    margin: 0;
+}
+
+/* ----------Homepage CSS---------- */
+
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    background-color: #66cefa96;
+    color: black;
+    margin: 5px;
+    border: 1px solid #366d85;
+    box-shadow: 0 0 5px #366d85;
+}
+
+.article p {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.article a, .hero a {
+    text-decoration: none;
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #366d85;
+    border-radius: 5px;
+    background-color: #468faf;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.article a:hover, .hero a:hover {
+    background-color: #366d85;
+    color: #f6f8f4;
+    transform: scale(1.025);
+}
+
+.hero {
+    margin: 5px;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 0 5px #366d85;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: .5rem;
+    font-size: .85rem;
+    border-radius: 5px;
+    background-color: #468faf;
+    color: white;
+}
+
+.hero a {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+.hero img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (orientation: landscape) and (max-width: 540px) {
+    header a p, .hero h1, .hero a, .article a, .article h2, footer {
+        font-size: 1rem;
+    }
+
+    .article p {
+        font-size: .8rem;
+    }
+}
+
+/* Media query for desktop screens */
+@media (min-width: 750px) {
+    main {
+        max-width: 1500px;
+        margin: 1rem auto;
+    }
+
+    header a p, .hero h1, .hero a, .article a, .article h2, footer {
+        font-size: 1.5rem;
+    }
+
+    .article p {
+        font-size: 1.25rem;
+    }
+
+    header {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        border: none;
+        padding: 0 1rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .active {
+        font-weight: bold;
+        text-decoration: none;
+        color: #f6f8f4;
+        background-color: #366d85;
+    }
+
+    nav a:hover {
+        color: #f6f8f4;
+        background-color: #366d85;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        transform: scale(1.1);
+    }
+
+    .home-grid {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+}
