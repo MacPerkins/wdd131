@@ -48,7 +48,6 @@ nav {
     text-align: center;
     justify-content: center;
     font-weight: 400;
-    background-color: none;
 }
 
 .active {
@@ -283,5 +282,9 @@ h2 {
         position: absolute;
         top: 25px;
         left: 25px;
+    }
+
+    footer {
+        font-size: 1rem;
     }
 }
