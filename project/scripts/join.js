@@ -7,8 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.body.appendChild(dialog);
 
+    const submittedEmails = JSON.parse(localStorage.getItem('submittedEmails')) || [];
+
     form.addEventListener('submit', (event) => {
         event.preventDefault();
+
+        const emailInput = form.querySelector('input[name="email"]').value;
+
+        if (submittedEmails.includes(emailInput)) {
+            alert('This email is already subscribed to the newsletter.');
+            return;
+        }
+
+        submittedEmails.push(emailInput);
+        localStorage.setItem('submittedEmails', JSON.stringify(submittedEmails));
 
         localStorage.setItem('formSubmitted', 'true');
 
@@ -18,5 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
             dialog.close();
             form.reset();
         });
+    });
+
+    submittedEmails.forEach(email => {
+        console.log(`Already subscribed: ${email}`);
     });
 });
